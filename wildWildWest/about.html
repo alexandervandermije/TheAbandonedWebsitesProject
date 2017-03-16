@@ -1,0 +1,280 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body ng-app="wildWildWestApp" ng-controller="mainController">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="custom-bootstrap-menu" class="navbar container-fluid navbar-default navbar-fixed-top" role="navigation">
+           
+                <div class="navbar-header">
+                    <div id="altNavLogo">
+                        <a href="index.html">
+                            <img src="img/logo2.gif">
+                        </a>
+                    </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-menubuilder">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="gallery.html">Gallery</a>
+                        </li>
+                        <li><a href="production.html">Production</a> 
+                        </li>
+                        <li><a href="#">About</a>
+                        </li>
+                        <a href="index.html">
+                            <img id="navLogo" src="img/logo.png" class="img-responsive">
+                        </a>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="videos.html">Videos</a>
+                        </li>
+                        <li><a href="downloads.html">Downloads</a>
+                        </li>
+                        <li><a href="#">Store</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="contentContainer" class='container-fluid'>
+            
+            <div id="headerRow" class="row">
+                <div id="headerColumn" class="col-sm-12">
+                    <div id="headerCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#headerCarousel" data-slide-to="1"></li>
+                            <li data-target="#headerCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/header.jpg">
+                                <div class="carousel-caption"></div>
+                            </div>
+                            <div class="item">
+                                <img src="img/header2.jpg">
+                                <div class="carousel-caption"></div>
+                            </div>
+                            <div class="item">
+                                <img src="img/header3.jpg">
+                            </div>
+                        </div>
+                            <a class="left carousel-control" href="#headerCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#headerCarousel"
+                            role="button" data-slide="next"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="contentRow" class="row">
+                <div class="row">
+                    <div id="aboutMenuContainer" class="col-sm-8 col-sm-offset-2">
+                        <h2>About</h2>
+                        <ul id="aboutMenu" class="inlineMenu">
+                            <li id="castMenu" ng-click="changeAboutTab('cast')" ng-class="{'active':showCastTab}">The Cast</li>
+                            <li id="filmmakersMenu" ng-click="changeAboutTab('filmmakers')" ng-class="{'active':showFilmmakersTab}">The Filmmakers</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div ng-show="showCastTab" id="cast">
+                    <div class="row">
+                        <div class="col-md-6 peopleLeft">
+                            <h3 class="peopleTitle">Will Smith as James T West</h3>
+                            <img src="img/people/willSmith.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                    WILL SMITH (James T. West) has starred in two of the ten all-time top grossing films worldwide: 1997’s summer blockbuster "Men in Black," for which he also recorded the Grammy-winning title song; and 1996’s "Independence Day." Last year he starred in "Enemy of the State," the hit film that paired him with Gene Hackman.
+                                </p>
+                                <p>
+                                    Smith’s box-office power was recognized by NATO/ShoWest when he was honored as the "Male Star of Tomorrow" in 1995 and, just two years later, with their International Box Office Achievement Award. This year, the organization named him "Male Star of the Year." In addition, Smith was selected "1999 Entertainer of the Year" by the NAACP Image Awards.
+                                </p>
+                                <p>
+                                    His feature film work also includes his critically acclaimed performance in the Oscar-nominated "Six Degrees of Separation," as well as "Bad Boys," "Made in America" and "Where the Day Takes You."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 peopleRight">
+                            <h3 class="peopleTitle">Kevin Kline as Artemus Gordon</h3>
+                            <img src="img/people/kevinKline2.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                    Academy Award-winner KEVIN KLINE (Artemus Gordon), who recently starred in the hit film "In & Out" and the critically acclaimed feature "The Ice Storm," has earned equal distinction in film and theater. In addition to receiving an Oscar for his work in "A Fish Called Wanda," Kline was nominated for Golden Globe Awards for his roles in "Sophie’s Choice," "Dave," "In & Out" and "Soapdish." He won the IFP’s Gotham Award for his performance in "The Ice Storm."
+                                </p>
+                                <p>
+                                    Kline is a graduate of the Juilliard School of Drama and a founding member of John Houseman’s The Acting Company, with whom he made his Broadway debut in Chekov’s "The Three Sisters." Other Broadway credits include Hal Prince’s "On the Twentieth Century," for which he won both a Tony and a Drama Desk Award, "The Pirates of Penzance," for which he won both a Tony and a Drama Desk Award, and "The Beggar’s Opera."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 peopleLeft">
+                            <h3 class="peopleTitle">Kenneth Branagh as Dr. Arliss Loveless</h3>
+                            <img src="img/people/kenneth.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                   Kenneth Branagh has made a significant impact in motion pictures as an actor, director, writer and producer, appearing most recently on screen in Woody Allen’s "Celebrity" and in Robert Altman’s "The Gingerbread Man."
+                                </p>
+                                <p>
+                                    Branagh studied at England’s Royal Academy of Dramatic Arts and made his professional debut in the hit "Another Country," followed by several other plays. He then joined the Royal Shakespeare Company, where he performed in "Love’s Labours Lost," "Hamlet" and "Henry V" before leaving to form his own successful theater company. Among his other accomplishments on stage were starring roles in sold-out productions of "Hamlet," "King Lear" and "A Midsummer Night’s Dream."
+                                </p>
+                             
+                            </div>
+                        </div>
+                        <div class="col-md-6 peopleRight">
+                            <h3 class="peopleTitle">Salma Hayek as Rita Escobar</h3>
+                            <img src="img/people/salma1.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                   SALMA HAYEK (Rita Escobar) gave up a successful career as a major television star in Latin America and moved to the United States to start over even though she spoke no English. Since then, Hayek has accumulated an impressive list of credits as both an actress and a producer.
+                                </p>
+                                <p>
+                                    Hayek made her feature film debut as an actress with a small role in Allison Anders’ "Mi Vida Loca" and played her first starring role in Robert Rodriguez’s "Desperado" opposite Antonio Banderas. Her other film credits include the upcoming features "Dogma" and "The Velocity of Gary," as well as "Fools Rush In," "54," "The Faculty," the award-winning "Midaq Alley," "From Dusk Till Dawn" and "Fled." Her telefilm credits include Rodriguez’s "Roadracers" for Showtime and "The Hunchback" for TNT.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 peopleLeft">
+                            <h3 class="peopleTitle">Ted Levine as McGrath</h3>
+                            <img src="img/people/levine.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                    TED LEVINE (McGrath) has appeared extensively on film, television and stage. His feature credits include "You Can Thank Me Later," "Flubber," "Switchback," "Mad City" and Michael Mann’s "Heat," as well as "Bullet," "Georgia," "Nowhere To Run," "The Paint Job," "The Silence of the Lambs," "Love at Large," "Next of Kin," "Betrayed" and "Ironweed."
+                                </p>
+                                <p>
+                                    On television, Levine appeared in the acclaimed HBO miniseries "From the Earth to the Moon" as Alan Shepard. He also appeared in "Moby Dick"; "Ellen Foster"; "Wiseguy"; "Mob Justice"; "The Last Outlaw" for HBO, directed by Geoff Murphy; CBS-TV’s "Broken Promises"; the USA Network’s "Death Train"; ABC’s movie-of-the-week "Dead and Alive"; ABC’s "Through Naked Eyes"; the PBS telefilm "The Killing Floor"; directed by Bill Dukes; and Michael Mann’s acclaimed series, "Crime Story." He will soon be starring in the new ABC series "Bellevue."
+                                </p>
+                             
+                            </div>
+                        </div>
+                        <div class="col-md-6 peopleRight">
+                            <h3 class="peopleTitle">Bai Ling as Miss East</h3>
+                            <img src="img/people/ling.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                    The actresses cast as Loveless’s lovely but lethal beauties include BAI LING (Miss East), a stage and screen star in her native China who was last seen starring opposite Richard Gere in "Red Corner." Since relocating to the United States, Bai Ling has worked with such prestigious filmmakers as Oliver Stone (in "Nixon") and Terence Malick, for whom she starred in his play "Sansho The Bailiff" at the Brooklyn Academy of Music. Her other roles include a mystical villainess in Alex Proyas’s "The Crow" and the lead in the American Playhouse production of "Nobody’s Girl" for PBS. She will soon be seen in "Anna," where she appears with Jodie Foster and Chow Yun-Fat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 peopleLeft">
+                            <h3 class="peopleTitle">Musetta Vander as Munitia</h3>
+                            <img src="img/people/musitta.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                    MUSETTA VANDER (Munitia) last wowed audiences as the evil Queen Sindel in New Line Cinema’s sci-fi action film "Mortal Kombat Annihilation." Her other feature credits include the cult classic "Oblivion," HBO’s dramatic comedy "Under the Hula Moon," the Showtime drama "Gunshy" and the upcoming drama "Molly." Vander began her career as a professional dancer in her native South Africa and hosted "Telemuzik," an MTV-like television show. Early in her U.S. career she appeared in 21 music videos for top musicians including Elton John, Tina Turner and Rod Stewart, and has subsequently guest-starred in numerous television shows, including "Buffy the Vampire Slayer" and "Star Trek: Voyager."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 peopleRight">
+                            <h3 class="peopleTitle">Frederique van der Wal as Amazonia</h3>
+                            <img src="img/people/frederique.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                    Dutch-born FREDERIQUE VAN DER WAL Frederique van der Wal , is one of the world’s most recognized supermodels, having graced the cover of Cosmopolitan numerous times, as well as having been featured in such top magazines as Harper’s Bazaar, Vogue and Mademoiselle. Other prominent modeling assignments include campaigns for Revlon’s "Most Unforgettable Women in the World," "Guess?" and the Victoria’s Secret catalogues. She has also appeared in the films "2 Girls and A Guy" and Woody Allen’s "Celebrity."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-show="showFilmmakersTab" id="filmmakers">
+                    <div class="row">
+                        <div class="col-md-6 peopleLeft">
+                            <h3 class="peopleTitle">Barry Sonnenfeld : Director/Producer</h3>
+                            <img src="img/people/barry.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                Barry Sonnennfeld began his career as a cinematographer, forming a collaboration with the Coen brothers on their first feature film, "Blood Simple," and continuing with "Raising Arizona" and "Miller’s Crossing." His other credits as a director of photography in film include "Throw Momma From the Train," "Three O’Clock High," "Big," "When Harry Met Sally..." and "Misery."</br>
+                                Sonnenfeld received an Emmy Award in 1985 for his camera work on the TV special "Out of Step" and received Clio Awards for directing the Nike "Dog" spot and a series of commercials for Isuzu and Reebok.
+                                </p>
+                                <p>
+                                    In 1991, Sonnenfeld made his directing debut with the hit comedy "The Addams Family." He followed it with "For Love or Money," the successful sequel "Addams Family Values" (in which he also played a small role), the critical and popular triumph "Get Shorty" (which he also executive produced and appeared in as a doorman) and the blockbuster 1997 summer hit "Men in Black," which starred Tommy Lee Jones and Will Smith. Most recently, Sonnenfeld executive produced, along with Danny DeVito’s Jersey Films, "Out of Sight," a stylish adaptation of the popular Elmore Leonard novel starring George Clooney and Jennifer Lopez.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 peopleRight">
+                            <h3 class="peopleTitle">Jon Peters : Producer</h3>
+                            <img src="img/people/jonPeters.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                    Producer JON PETERS has amassed an impressive list of motion-picture triumphs as a producer, including John Singleton’s debut film, "Boyz N’ the Hood," "Batman" and "Rain Man," which earned the Academy Award for Best Picture.
+                                </p>
+                                <p>
+                                    During his tenure as co-chairman of Sony Pictures Entertainment, Peters initiated such blockbusters as "A Few Good Men," "The Prince of Tides," "Hook," "Bugsy," "Bram Stoker’s Dracula," "My Girl" and "A League of Their Own." Peters’ other credits include "Batman Returns," "The Color Purple," "Gorillas in the Mist," "Flashdance," "The Witches of Eastwick," "A Star is Born," "Eyes of Laura Mars," "Caddyshack," "Endless Love," "An American Werewolf in London," "Missing," "Money Train," "Rosewood" and "My Fellow Americans."
+                                </p>
+                                <p>
+                                    In 1991, Peters left his position at Sony to form Peters Entertainment. Under its exclusive partnership with Warner Bros. and Sony Pictures, Peters Entertainment is developing a slate of more than 80 films.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 peopleLeft">
+                            <h3 class="peopleTitle">Bill Todman, JR. : Executive Producer</h3>
+                            <img src="img/people/bill.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                     Bill Todman, JR. has a three-year, first-look agreement with Kopelson Entertainment at 20th Century Fox. Prior to this, he was, from 1995 to 1998, Head of Production for Morgan Creek Productions, where he oversaw such films as "Diabolique," "Two If By Sea," "Bad Moon," "Wild America," "Major League: Back to the Minors," "Wrongfully Accused" and the animated "The King and I."
+                                </p>
+                                <p>
+                                    Between 1987 and 1995, he was partnered with Joel Simon in Todman-Simon Productions, where his film credits included "Married to the Mob" and "Hard to Kill," as well as five network pilots, one CBS half-hour series and one NBC movie of the week.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 peopleRight">
+                            <h3 class="peopleTitle">Micheal Ballhaus, A.S.C : Director of photography</h3>
+                            <img src="img/people/ballhaus.jpg" class="img-circle peopleImg">
+                            <div class="peopleText">
+                                <p>
+                                    Director of photography MICHAEL BALLHAUS, A.S.C. is a two-time Oscar nominee, honored for "The Fabulous Baker Boys" and "Broadcast News." The German-born cinematographer garnered awards for "GoodFellas" (L.A. Film Critics and BAFTA), "The Age of Innocence" (BAFTA) and "Bram Stoker’s Dracula" (Chicago Film Critics), as well as the German Bundesfilmpreis for "The Bitter Tears of Petra Von Kant" and the Berlin Film Festival’s Silver Bear for "The Marriage of Maria Braun."
+                                </p>
+                                <p>
+                                    A frequent collaborator with acclaimed directors Mike Nichols and Martin Scorsese, Ballhaus shot "Primary Colors," "Postcards from the Edge" and "Working Girl" for Nichols and, for Scorsese, "The Last Temptation of Christ," "The Color of Money, "After Hours" and the aforementioned "GoodFellas" and "The Age of Innocence." Ballhaus’ other credits include Wolfgang Petersen’s "Air Force One" and "Outbreak"; "Quiz Show," "I’ll Do Anything," "The Mambo Kings," "What About Bob," "Guilty by Suspicion," "The House on Carroll Street," "Dirty Rotten Scoundrels" and "The Glass Menagerie."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>      
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
+        <script src="bower_components/coverflow/jquery.coverflow.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,459 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#mainImage
+{
+	width:100%;
+}
+
+
+.dropdown
+{
+	cursor: pointer;
+}
+
+/* Text & Titles */
+
+h2
+{
+	text-align:center;
+	font-weight:bold;
+}
+p
+{
+	font-size:16px;
+}
+.writtenBy
+{
+	font-size:18px;
+	font-style:italic;
+	font-weight:bold;
+}
+.italic
+{
+	font-style:italic;
+}
+
+/* Interview Panels */
+
+.interviewPanel
+{
+	background-color: rgba(238, 238, 238, 0.22);
+	border-radius:10px;
+}
+.panel-heading
+{
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	background-color: rgba(214, 0, 0, 1) !important;
+	background-image:none !important;
+}
+.interviewPanelTitle
+{
+	font-weight:bold;
+	font-size:21px;
+	color:white;
+	overflow: hidden;
+   	text-overflow: ellipsis;
+   	display: -webkit-box;
+
+	line-height: 22px;     /* fallback */
+   	max-height: 22px;      /* fallback */
+   -webkit-line-clamp: 1; /* number of lines to show */
+   -webkit-box-orient: vertical;
+
+}
+.interviewPanelInfo
+{
+	float:left;
+	width:100%;
+	border-bottom:solid 4px;
+	border-color:#bbb;
+	padding:0;
+	padding-top:0.5em;
+	margin-bottom:0.2em;
+	background-color:white;
+}
+.interviewPanelInfo p
+{
+	font-size: 18px;
+    line-height: 20px;
+}
+.interviewPanelIntervieweeInfo
+{
+	float:left;
+	margin-left:10%;
+}
+.interviewPanelInterviewerInfo
+{
+	float:right;
+	margin-right:10%;
+}
+.interviewPanelLabel
+{
+	font-weight:bold;
+}
+.interviewPanelAnswer
+{
+	font-style:italic;
+	margin-bottom:5px;
+}
+
+
+.interviewPanelDescription
+{
+	float:left;
+	height:12em;
+	margin-left:10px;
+}
+.interviewPanelDescription img
+{
+	height:100%;
+	width:35%;
+	float:left;
+}
+.interviewPanelDescription p
+{
+	float:left;
+	width:63%;
+	margin-left:2%;
+	overflow: hidden;
+   	text-overflow: ellipsis;
+   	display: -webkit-box;
+   	line-height: 16px;     /* fallback */
+   	max-height: 128px;      /* fallback */
+   -webkit-line-clamp: 8; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+.interviewPanelButton
+{
+	float:right;
+	position:relative;
+}
+
+/* Navigation  */
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(119, 119, 119, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 24px;
+    background-color: rgba(214, 0, 0, 1);
+    border-width: 0px;
+    border-radius: 0px;
+    background-image:none;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(13, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #d60000;
+}
+.dropdown-menu>li>a 
+{
+	font-size:18px;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.active>a
+{
+	background-color: #fff !important;
+	background-image:none;
+	color:black !important;
+}
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu>li>a
+ {
+    color: white;
+}
+}
+
+/* Interviewers Page */
+
+#interviewersImage
+{
+	width:100%;
+}
+#interviewersNamesTitle
+{
+	margin-top:3.5%;
+	font-size:21px;
+	font-weight:bold;
+}
+#interviewersNames
+{
+	text-align:center;
+}
+
+/* Cited Works Page */
+
+#citedWorksContainer
+{
+	text-align:center;
+}
+
+/* Glossary */
+
+#glossaryContainer p
+{
+	text-align:center;
+	padding-bottom:10px;
+	border-bottom:solid 4px #B2B2B2;
+}
+dl
+{
+	font-size:16px;
+}
+dt
+{
+	margin-bottom:4px;
+	margin-left:4px;
+}
+dd
+{
+	margin-bottom:4px;
+	margin-left:4px;
+}
+/* Interview Page */
+
+.interviewTitleRow
+{
+	padding-bottom:10px;
+	background-color:#eee;
+	margin-top:-20px;
+}
+.interviewTitle
+{
+
+}
+.interviewInfo
+{
+	text-align:center;
+	margin-top:-15px;
+}
+.interviewInfo p
+{
+	display:inline;
+	margin-right:10px;
+	font-size:18px;
+}
+.mainInterviewImage
+{
+	display: inline;
+    float: left;
+    margin-right:10px;
+}
+.interviewColumns
+{
+	margin-top:10px;
+}
+
+
+/* Timeline */
+
+.timeline {
+    list-style: none;
+    padding: 0px 0 20px;
+    position: relative;
+    margin-top:-20px;
+}
+	.timelineYear
+	{
+		z-index:100;
+		width:100%;
+		background-color:#B2B2B2;
+		margin-bottom:10px;
+	}
+	.timelineYearTitle
+	{
+		padding-top:5px;
+		padding-bottom:5px;
+		font-size:4em;
+		margin:0px;
+		text-align:center;
+
+	}
+
+
+    .timeline:before {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        content: " ";
+        width: 3px;
+        background-color: #eeeeee;
+        left: 50%;
+        margin-left: -1.5px;
+        z-index:-1;
+    }
+
+    .timeline > li {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+        .timeline > li:before,
+        .timeline > li:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline > li:after {
+            clear: both;
+        }
+
+        .timeline > li:before,
+        .timeline > li:after {
+            content: " ";
+            display: table;
+        }
+
+        .timeline > li:after {
+            clear: both;
+        }
+
+        .timeline > li > .timeline-panel {
+            width: 46%;
+            margin-left:2%;
+            float: left;
+            background-color:#EDEDED;
+            border-radius: 20px;
+            padding: 20px;
+            position: relative;
+            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+        }
+        .timeline > li > .timeline-badge {
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.4em;
+            text-align: center;
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            margin-left: -25px;
+            background-color: #999999;
+            z-index: 100;
+            border-top-right-radius: 50%;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        .timeline > li.timeline-inverted > .timeline-panel {
+            float: right;
+            margin-right:2%;
+        }
+
+            .timeline > li.timeline-inverted > .timeline-panel:before {
+                border-left-width: 0;
+                border-right-width: 15px;
+                left: -15px;
+                right: auto;
+            }
+
+            .timeline > li.timeline-inverted > .timeline-panel:after {
+                border-left-width: 0;
+                border-right-width: 14px;
+                left: -14px;
+                right: auto;
+            }
+
+.timeline-badge.primary {
+    background-color: #2e6da4 !important;
+}
+
+.timeline-badge.success {
+    background-color: #3f903f !important;
+}
+
+.timeline-badge.warning {
+    background-color: #f0ad4e !important;
+}
+
+.timeline-badge.danger {
+    background-color: #d9534f !important;
+}
+
+.timeline-badge.info {
+    background-color: #5bc0de !important;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+    font-weight:bold;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+    margin-bottom: 0;
+}
+
+    .timeline-body > p + p {
+        margin-top: 5px;
+    }
+
+@media (max-width: 767px) {
+	
+    ul.timeline:before {
+        left: 40px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+
+    ul.timeline > li > .timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        float: right;
+        margin-right:2%;
+    }
+
+        ul.timeline > li > .timeline-panel:before {
+            border-left-width: 0;
+            border-right-width: 15px;
+            left: -15px;
+            right: auto;
+        }
+
+        ul.timeline > li > .timeline-panel:after {
+            border-left-width: 0;
+            border-right-width: 14px;
+            left: -14px;
+            right: auto;
+        }
+}

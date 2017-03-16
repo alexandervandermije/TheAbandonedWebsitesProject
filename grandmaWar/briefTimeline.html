@@ -1,0 +1,229 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+ 
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-route.js"></script>
+</head>
+<body ng-app="grandmaApp" ng-controller="mainController as mainCtrl">
+<!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    <div class="container-fluid">
+        <div class="row">
+            <img id="mainImage" ng-src={{mainImage}}>
+        </div>
+        <div class="row">
+            <div onLoad="setActive('war')" class="navigation" ng-include="'views/navigation.html'"></div>
+        </div>
+        <div class="row content">
+            <div id="timeline-container">
+                <ul class="timeline">
+                    <div class="timelineYear"><h3 class="timelineYearTitle">1938</h3></div>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">April 10</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Having annexed Austria in March, Germany's Adolph Hitler calls a plebiscite which shows that more than 99 percent of Austrians favor union with Germany's Third Reich.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">June 10</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>The US Congress passes the Fair Labor Standards Act, the first national effort to legislate a minimum hourly wage (25 cents) and a ceiling on the number of working hours (44 per week).</p>   
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">September 30</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>The Munich Pact is signed. The British and French allow Hitler to annex the Sudetenland, a 16,000-square-mile area of Czechoslovakia with a largely German-speaking population. British Prime Minister Neville Chamberlain (1869-1940) says this will satisfy Germany and bring "peace for our time ... peace with honor."</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">November 9</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>The largest pogrom in German history takes place, as Jewish shop windows are smashed, and the shops, as well as homes and synagogues, are looted, destroyed and burned. Between 20,000 and 30,000 Jews are taken to concentration camps.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="timelineYear"><h3 class="timelineYearTitle">1939</h3></div>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Januari 16</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Physicists Lise Meitner and Otto R. Frisch describe the process by which a neutron causes the disintegration of the uranium nucleus into "two nuclei of roughly equal size." They call this process "nuclear fission."
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">March 14</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>After annexing the Sudetenland, Germany invades the rest of Czechoslovakia, while Italy launches an invasion of Albania (see map).</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">March 28</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>The Spanish Civil War ends, as Madrid falls to the forces of Francisco Franco.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">August 23</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Nazi Germany and Soviet Russia sign a mutual non-aggression pact. The agreement is signed by German foreign minister Joachim von Ribbentrop and Josef Stalin's commissar of foreign affairs, V. M. Molotov.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">September 1</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>German troops and aircraft attack Poland. Soviet troops will invade Poland from the east on September 17, and Poland will surrender to the Germans on September 27.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">September 3</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>After Hitler ignores their demand for German withdrawal from Poland, and as the British ship Athenia is sunk by German U-boats off the coast of Ireland, Great Britain and France formally declare war on Germany.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">September 17</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>American aviation hero Charles A. Lindbergh makes his first anti-intervention radio speech. The U.S. non-intervention movement is supported not just by Lindbergh, but by former president Herbert Hoover, Theodore Roosevelt, Jr., Henry Ford, Lindbergh and a number of senators and congressmen as well.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">September 28</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Poland is partitioned between Nazi Germany and Soviet Russia.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">November 4</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Although President Roosevelt has declared American neutrality in the war in Europe, a Neutrality Act is signed that allows the US to send arms and other aid to Britain and France.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">November 30</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Sovjet troops invade Finland.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">December 16</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>In Washington, the National Women's Party meets and urges the Congress to act on an Equal Rights Amendment.</p>
+                            </div>
+                        </div>
+                    </li>
+                     <div class="timelineYear"><h3 class="timelineYearTitle">1940</h3></div>
+                    <li class="timeline-inverted">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">January 30</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>The U.S. government issues its first Social Security checks, totaling just over $75,000.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">March 18</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Mussolini and Hitler announce Italy's formal alliance with Germany against England and France.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+ 
+        
+        <footer>
+            <p>&copy; Company 2015</p>
+        </footer>
+    
+    </div>  
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+</html>

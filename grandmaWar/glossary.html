@@ -1,0 +1,97 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+ 
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-route.js"></script>
+</head>
+<body ng-app="grandmaApp" ng-controller="mainController as mainCtrl">
+<!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    <div class="container-fluid">
+        <div class="row">
+            <img id="mainImage" ng-src={{mainImage}}>
+        </div>
+        <div class="row">
+            <div class="navigation" ng-include="'views/navigation.html'"></div>
+        </div>
+        <div id="glossaryContainer" class="row content">
+            <h2>Glossary</h2>
+            <p>This glossary defines terms frequently used in the What Did You Do in the War, Grandma? interviews.</p>
+            <dl class="dl-horizontal">
+                <dt>Air Raid Shelter</dt>
+                <dd>In anticipation of attack by aircraft, especially bombers, many cities built and maintained air raid shelters. They regularly practiced air raid drills in which a "false" alarm was sent off and people were evacuated to these special shelters for safety.</dd>
+                <dt>Allies</dt>
+                <dd>In World War II, the nations allied against the Axis forces, especially Great Britain, the Soviet Union, and the US.</dd>
+                <dt>Axis</dt>
+                <dd>The countries allied against the Allies in World War II, originally applied to Nazi-Germany and Fascist Italy, later extended to include Japan, etc.</dd>
+                <dt>Blackout</dt>
+                <dd>Following the attack on Pearl Harbor in 1941, there were fears of bombing attacks by Germany as well as the more realistic threat of German U-boats operating in the Atlantic. Coastal "blackouts," and "dimouts" went into effect along a fifteen-mile strip on the Eastern Seaboard. They required that the lights of all houses and neighborhoods along the shores be put out at specified curfews.</dd>
+                <dt>Bomb</dt>
+                <dd>A bomb is generally a heavy container filled with an explosive substance, dropped from a military aircraft to cause death or destruction by concussion. Special types of bombs may be used to spread fire, gas, smoke, or disease germs, or to distribute leaflets. World War II saw the growth of aerial bombardment as a very effective tool of war. About 6,000 tons of bombs were dropped by the Allies on Europe in 1942 and in 1945, the US Army Air Forces dropped a total of 445,000 tons of bombs in only four months. 
+                </br><a href="img/bombs.gif">An illustration of some of the bombs used by Allied forces.</a>
+                </br></br><strong>An atomic bomb's effects differ from those of conventional bombs in three important respects:</strong></br>
+                <ol>
+                    <li>the amount of energy released (blast) is about a million times that of the same weight of high-explosive bombs</li>
+                    <li>the atomic explosion is accompanied by the immediate release of penetrating, harmful, and invisible radiation</li>
+                    <li>substances remaining in the area long after the explosion are radioactive and harmful to living organisms.</li>
+                </ol>
+                </br>
+                On October 11, 1939, a letter written by Albert Einstein was delivered to President Roosevelt. In it, Einstein discussed the implications of a nuclear chain reaction and the powerful bombs that might be constructed. He said,"A single bomb of this type, carried by boat and exploded in a port, might very well destroy the whole port, together with some of the surrounding territory." After receiving this letter, Roosevelt began a secret military undertaking (the Manhattan Project) that would result in the atomic bomb. The atomic bomb dropped on Hiroshima in 1945 leveled 98 percent of the city's buildings and killed 80,000 people immediately, seriously wounding another 100,000 (out of a total population of 344,000). The two atomic bombs dropped on Japan during World War II had the total equivalent effect of approximately 40,000 tons of TNT.</dd>
+                <dt>GI Bill</dt>
+                <dd>In June, 1944 President Roosevelt signed the Servicemen's Readjustment Act, otherwise known as the GI BIll. It provided funds for housing and education after the war.</dd>
+                <dt>Holocaust</dt>
+                <dd>During World War II, Hitler's "final solution," or extermination of the Jews, took the lives of at least 6 million Jews; most of these died in concentration camps where they were separated from family members, tortured, beaten, and upon whom many unspeakable and loathsome crimes were committed. The atrocities of the Holocaust also included the notorious gas chambers and ovens. Millions of Slavs, Eastern Europeans, gypsies, and homosexuals were similarly engulfed by the Holocaust. (For more: <span class="italic">The Diary of Anne Frank</span> gives a young Jewish girl's account of her life during World War II.)</dd>
+                <dt>Internment Camps</dt>
+                <dd>In 1942, President Roosevelt approved the plan to remove approximately 110,000 Japanese-Americans living on the Pacific Coast of the U.S. from their homes -- nearly two-thirds of them American citizens -- and send them to internment camps in Colorado, Utah, Arkansas, and other interior states. Japanese-Americans were given numbers to identify their families and the conditions that they lived in were often very poor. (For more: Mine Okubo's novel Citizen 13660 gives a vividly illustrated account of her life in two relocation centers.)</dd>
+                <dt>Mein Kampf</dt>
+                <dd>the German National Socialist "bible," dictated by Hitler while he was imprisoned in Bavaria in 1923. Hitler argued that the German people, racially superior, were threatened by liberalism, Marxism, humanism, and Bolshevism, which were directed from behind the scenes by Jews.</dd>
+                <dt>Rationing</dt>
+                <dd>Rationing began in the US in 1942 in order to preserve resources, such as gas and food, for the war. Americans were given ration tickets to control the amount of gasoline, meat, sugar, butter, even shoes they bought. Many of those women interviewed remember seeing horse meat sold in some markets due to the shortage of other meat.</dd>
+                <dt>Rosie the Riveter</dt>
+                <dd>Created by Norman Rockwell in 1943, the character "Rosie" was a sandwich-munching, brawny, yet innocent-looking woman in coveralls, cradling her rivet gun in her lap, goggles pushed up onto her forehead. Rockwell's "Rosie" is an admiring tribute to the more than 6 million women who entered the job force during the war, many of them taking up positions in what was considered "man's work," including the defense industries. However, the image was destined to last only as long as the war.</br>
+                <a href="img/rosie.gif">One illustration</a> of "Rosie." </dd>
+                <dt>Segregation</dt>
+                <dd>Though both Black and White soldiers fought and died for the U.S. during World War II, Blacks were still segregated from the Whites. In the South, water fountains, eating establishments, and transportation were separated. Even after Black soldiers came back from the war, they were discriminated against by the very country for whom they risked their lives. It would be twenty years later that the Civil Rights Movement would slowly begin to address such discrimination.</dd>
+                <dt>Victory Gardens</dt>
+                <dd>Victory Gardens were cultivated soon after rationing was put into effect. They were small gardens of vegetables which provided some food in place of those items which were rationed by the government. In addition to their practical aspects, victory gardens also cultivated morale by showing civilian support for the war effort. <a href="img/victGarden.gif">A Victory Garden advertisement</a> from the Providence Journal, 5/4/45.</dd>
+                <dt>V-E Day</dt>
+                <dd>Victory over Europe Day, the day on which the surrender of Germany was announced (May 7th, 1945), officially ending the European phase of World War II.</dd>
+                <dt>V-J Day</dt>
+                <dd>Victory over Japan Day, the day on which the fighting with Japan officially ended in (August 15, 1945) or the day surrender was formally signed (September 2, 1945).</dd>
+            </dl>
+
+            
+        </div>
+ 
+        
+        <footer>
+            <p>&copy; Company 2015</p>
+        </footer>
+    
+    </div>  
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+</html>

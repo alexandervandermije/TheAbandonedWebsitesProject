@@ -1,0 +1,125 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    </head>
+    <body ng-app="wildWildWestApp" ng-controller="mainController">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+           
+                <div class="navbar-header">
+                    <div id="altNavLogo">
+                        <a href="#">
+                            <img src="img/logo2.gif">
+                        </a>
+                    </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-menubuilder">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="gallery.html">Gallery</a>
+                        </li>
+                        <li><a href="production.html">Production</a> 
+                        </li>
+                        <li><a href="about.html">About</a>
+                        </li>
+                        <a href="#"><img id="navLogo" src="img/logo.png" class="img-responsive"></a>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="videos.html">Videos</a>
+                        </li>
+                        <li><a href="downloads.html">Downloads</a>
+                        </li>
+                        <li><a href="#">Store</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="contentContainer" class='container-fluid'>
+            
+            <div id="headerRow" class="row">
+                <div id="headerColumn" class="col-sm-12">
+                    <div id="headerCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#headerCarousel" data-slide-to="1"></li>
+                            <li data-target="#headerCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/header.jpg">
+                                <div class="carousel-caption"></div>
+                            </div>
+                            <div class="item">
+                                <img src="img/header2.jpg">
+                                <div class="carousel-caption"></div>
+                            </div>
+                            <div class="item">
+                                <img src="img/header3.jpg">
+                            </div>
+                        </div>
+                            <a class="left carousel-control" href="#headerCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#headerCarousel"
+                            role="button" data-slide="next"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="contentRow" class="row">
+                <div class="col-md-6">
+                    <h2>Welcome to the Wild Wild West!</h2>
+                    <p>Lorem ipsum dolor sit amet, malis dicant vis at, probatus recteque honestatis pri an. Duo an possit pertinax perpetua. Sit soluta iisque aeterno ex. Alterum imperdiet cu vis, pro ex facilis maluisset, mazim assueverit cu usu. Pro id offendit vulputate pertinacia, reque ludus mandamus vim at. An duo scripta perfecto intellegebat, mollis dolorum facilisi has te. Tale erat has ne, maiorum commune sea ea.
+                    </p>
+                    <p>
+                    Ubique omittam ocurreret ad sea, commodo phaedrum deseruisse ne vix. Qui cetero admodum tibique et. Te facete volutpat vis, nec an sumo copiosae atomorum. Ex dico reprimique cotidieque vim. Tation lucilius posidonium cu cum, putent audiam recusabo mei te, putent lobortis ullamcorper ei ius.
+                    </p>
+                    <p>
+                    Malis errem invidunt cu vel. Aeque reprehendunt vis eu, inani laoreet vivendo vim ne. Nec oblique labores eu, ut option lucilius eam, at quo timeam fabulas scriptorem. Duo cu docendi gloriatur, sit at omnis molestiae hendrerit, latine contentiones et usu.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Trailer</h2>
+                    <div id="trailerContainer">
+                        <iframe id="trailer" src="https://www.youtube.com/embed/It89i3W-v4s?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>      
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
+        <script src="bower_components/coverflow/jquery.coverflow.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

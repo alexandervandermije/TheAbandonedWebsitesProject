@@ -1,0 +1,212 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+ 
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-route.js"></script>
+</head>
+<body ng-app="grandmaApp" ng-controller="mainController as mainCtrl">
+<!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    <div class="container-fluid">
+        <div class="row">
+            <img id="mainImage" ng-src={{mainImage}}>
+        </div>
+        <div class="row">
+            <div class="navigation" ng-include="'views/navigation.html'"></div>
+        </div>
+        <div class="row content">
+            <div class="col-lg-4 col-sm-6">
+                <div class="interviewPanel panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title interviewPanelTitle">The threat of war becomes real</h2>
+                    </div>
+                    <div class="interviewPanelInfo">
+                        <div class="interviewPanelIntervieweeInfo">
+                            <p class="interviewPanelLabel">Interviewee:</p>
+                            <p class="interviewPanelAnswer">Mabel Smith</p>
+                        </div>
+                        <div class="interviewPanelInterviewerInfo">
+                            <p class="interviewPanelLabel">Interview by:</p>
+                            <p class="interviewPanelAnswer">Elli Kaufman</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="interviewPanelDescription">
+                            <img src="img/faces/mabelSmith.gif">
+                            <p><span class="italic">I was interviewing Mabel Smith in her large, airy farmhouse. She's a sensible, duty-minded woman, who likes to get involved in community affairs. Married in January of '39, she spent the war time coming up weekends in the summer to Rhode Island by train and raising three children.</span></br></br>
+
+                                I can remember being here in Matunuck at Labor Day time when the Germans marched into Poland. I was very aware of the buildup, and of the fear of war that people had. In the summer of '37 I took a trip to Europe, and went to Austria. People there were very enthusiastic about Hitler, but you did wonder. Oh, they were for Hitler, they were. He encouraged young people to have great pride in the Aryan race and in the German nation, and he encouraged all sorts of athletic disciplines, the great strong Germanic, the master race, as he called it. Oh, it was a little scary even then. I didn't know too much about the anti-Semitism, but I was aware of it. I knew it was part of Hitler's build-up, and his policy. I can remember when Chamberlain made his agreement, and sort of sold out the Czechoslovakian Sudetenland. That made a great many people uneasy. He said he was getting peace for our times, but you felt that it couldn't last.
+                            </p>
+                            <a href="nancyPotter.html"><button class="btn btn-danger interviewPanelButton">Read more!</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="interviewPanel panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title interviewPanelTitle">Life would never be the same again</h2>
+                    </div>
+                    <div class="interviewPanelInfo">
+                        <div class="interviewPanelIntervieweeInfo">
+                            <p class="interviewPanelLabel">Interviewee:</p>
+                            <p class="interviewPanelAnswer">Nancy Potter</p>
+                        </div>
+                        <div class="interviewPanelInterviewerInfo">
+                            <p class="interviewPanelLabel">Interview by:</p>
+                            <p class="interviewPanelAnswer">Breana Comiskey</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="interviewPanelDescription">
+                            <img src="img/faces/nancyPotter.gif">
+                            <p><span class="italic">
+                                    A small, cheery woman with a reddish brown pageboy, Nancy Potter is an English teacher at the University of Rhode Island who has published many short stories including her latest collection Legacies.
+                                </span></br></br>
+                                I was living on a farm in eastern Connecticut. I was very aware that the war was going on in England because I had an English pen pal. People grew up early in those days. My pen pal was in an air raid shelter in London, and she would write letters about the war. During two bad winters, she spent almost every other evening in the air raid shelter.
+
+                                I was standing on the stairs when the Pearl Harbor announcement was made on the particular day, and the declaration of war followed very suddenly. I can remember looking down at the carpet and thinking life would never be the same again.
+                                   
+                            </p>
+                            <a href="nancyPotter.html"><button class="btn btn-danger interviewPanelButton">Read more!</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="interviewPanel panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title interviewPanelTitle">A farm girl plays professional baseball</h2>
+                    </div>
+                    <div class="interviewPanelInfo">
+                        <div class="interviewPanelIntervieweeInfo">
+                            <p class="interviewPanelLabel">Interviewee:</p>
+                            <p class="interviewPanelAnswer">Wilma Briggs</p>
+                        </div>
+                        <div class="interviewPanelInterviewerInfo">
+                            <p class="interviewPanelLabel">Interview by:</p>
+                            <p class="interviewPanelAnswer">Ben Tyler</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="interviewPanelDescription">
+                            <img src="img/faces/wilmaBriggsOld.gif">
+                            <p><span class="italic">Wilma Briggs is an elementary school teacher. Her feelings about women in the family were not what I had expected, considering her unusual career for the time as a professional baseball player.</span></br></br>
+
+                                I was born in 1930 and grew up on a farm in East Greenwich. There were 11 children in my family. We had a 60 acre dairy farm, and a lot of work to do. Not a lot of money, but a lot of food. We had our own garden, grew our own food, and played a lot of baseball.
+                            </p>
+                            <a href="nancyPotter.html"><button class="btn btn-danger interviewPanelButton">Read more!</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="interviewPanel panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title interviewPanelTitle">Coming to Terms with the Holocaust</h2>
+                    </div>
+                    <div class="interviewPanelInfo">
+                        <div class="interviewPanelIntervieweeInfo">
+                            <p class="interviewPanelLabel">Interviewee:</p>
+                            <p class="interviewPanelAnswer">Judith Weiss Cohen</p>
+                        </div>
+                        <div class="interviewPanelInterviewerInfo">
+                            <p class="interviewPanelLabel">Interview by:</p>
+                            <p class="interviewPanelAnswer">Jason Gelles</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="interviewPanelDescription">
+                            <img src="img/faces/judithCohenOld.gif">
+                            <p><span class="italic">
+                                    There are two sides to Judith Cohen. There is the up-beat, enthusiastic side of her that I first encountered. Later on, I discovered a more serious side. She spoke in low tones, and appeared possessed by a greater force, almost enchanted. Life was difficult before World War II. Her father had a hard time finding work during the Depression. Life was a game of hop-scotch between homes. Business would go bad and her family would move, again and again. Finally they moved to a small flat on Taft Street in Providence and Judith went to Hope High School.
+                                </span></br></br>
+                            </p>
+                            <a href="nancyPotter.html"><button class="btn btn-danger interviewPanelButton">Read more!</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="interviewPanel panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title interviewPanelTitle">Her students became soldiers</h2>
+                    </div>
+                    <div class="interviewPanelInfo">
+                        <div class="interviewPanelIntervieweeInfo">
+                            <p class="interviewPanelLabel">Interviewee:</p>
+                            <p class="interviewPanelAnswer">Mary Bistow</p>
+                        </div>
+                        <div class="interviewPanelInterviewerInfo">
+                            <p class="interviewPanelLabel">Interview by:</p>
+                            <p class="interviewPanelAnswer">Kristen Elliot</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="interviewPanelDescription">
+                            <img src="img/faces/maryBistow.gif">
+                            <p><span class="italic">Mary Bristow, a South County native, is a quiet, retired English teacher who helped out in the war effort and kept in contact with her many students who went away to war. A resident of West Kingston, she still lives in the house where she was raised.</span></br></br>
+
+                                I began teaching English in 1936 and loved it. Once the war started, many of my students were drafted, or as soon as they graduated they had to sign up for the war. I really felt bad when the students were drafted. they were so young, only eighteen years old, with so little preparation. They were leaving, maybe never to return.
+                            </p>
+                            <a href="nancyPotter.html"><button class="btn btn-danger interviewPanelButton">Read more!</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="interviewPanel panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title interviewPanelTitle">A Pacifist in a Time of War</h2>
+                    </div>
+                    <div class="interviewPanelInfo">
+                        <div class="interviewPanelIntervieweeInfo">
+                            <p class="interviewPanelLabel">Interviewee:</p>
+                            <p class="interviewPanelAnswer">Rachel Higgins</p>
+                        </div>
+                        <div class="interviewPanelInterviewerInfo">
+                            <p class="interviewPanelLabel">Interview by:</p>
+                            <p class="interviewPanelAnswer">Hannah Gould</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="interviewPanelDescription">
+                            <img src="img/faces/rachelHiggins.gif">
+                            <p><span class="italic">
+                                    Rachel Higgins is 83 years old. I was struck by how much she realized the prejudices of people during the war, and of how she stuck to her philosophy of peace.
+                                </span></br></br>
+                                My roots as a peace person started when I was seven years old, during the First World War. My father was a minister, and he kept getting all this propaganda, and he would throw it into the wastebasket. I got very curious, and I went into the wastebasket and pulled everything out! And what did I see? These ghastly pictures of what the Germans were said to have done to the Belgians, piles of babies' hands that they'd cut off! They were piled way up and these things were so awful! I shouldn't have seen these pictures, but my father didn't know that I was going to get into the wastebasket. I filled my mind with that stuff. Some of it was propaganda and exaggeration, but some of it was no doubt true. So that really, really impressed me, and I had dreams of bombs falling. I don't know any other child around whom it bothered, but it really sank into my subconscious. That's how I first became a peace activist. When World War II came along, I think it was everything together; it sort of added up to the fact that I was not to be a war person, I was to be a peace person, and devote my life to that sort of thing. Peace was my commitment from that time on.       
+                            </p>
+                            <a href="nancyPotter.html"><button class="btn btn-danger interviewPanelButton">Read more!</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        
+        <footer>
+            <p>&copy; Company 2015</p>
+        </footer>
+    
+    </div>  
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="js/main.js"></script>
+</html>
